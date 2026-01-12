@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Sur Mesure - Montage & Optimisation Gaming / Vie Privée</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <img src="images/logo.png" alt="Logo PC Sur Mesure" class="logo">
+    <div>
+        <h1>PC Sur Mesure Marseille</h1>
+        <p>Montage tour personnalisé • Optimisation Windows Gaming & Vie Privée • Devis gratuit</p>
+    </div>
+</header>
+
+<main>
+
+    <!-- Galerie Configurations (carousel + thumbnails) -->
+    <section id="gallery">
+        <h2>Nos Configurations Phares – Personnalisables</h2>
+        <p>Défilez automatiquement ou utilisez les flèches. Cliquez sur les miniatures pour changer la vue. Chaque build s'adapte à votre budget et profil (gamer, privacy, etc.).</p>
+
+        <div class="slideshow-container">
+
+            <!-- Slide 1 - Ultra 4K -->
+            <div class="mySlides">
+                <div class="slide-content">
+                    <div class="slide-image">
+                        <img src="images/pc1.jpg" alt="Ultra 4K Gaming - Vue principale" class="main-img">
+                        <div class="thumbnails">
+                            <img src="images/pc2.jpg" alt="Face RGB" onclick="changeImage(this)" class="active">
+                            <img src="images/pc3.jpg" alt="Côté verre" onclick="changeImage(this)">
+                            <img src="images/pc4.jpg" alt="Intérieur composants" onclick="changeImage(this)">
+                        </div>
+                    </div>
+                    <div class="slide-description">
+                        <h3>Ultra 4K Gaming</h3>
+                        <p class="price">Prix indicatif : 2200–2800 €</p>
+                        <ul>
+                            <li>RTX 5090 / Ryzen 9 9950X</li>
+                            <li>64 Go DDR5 + Watercooling custom</li>
+                            <li>Optimisations : Max FPS, RGB sync, Silence</li>
+                            <li>Idéal pour : 4K ultra + streaming</li>
+                        </ul>
+                        <a href="mailto:contact@pcsurmesure.fr?subject=Devis Ultra 4K" class="btn-devis">Demander devis</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 - 1440p Équilibré -->
+            <div class="mySlides">
+                <div class="slide-content">
+                    <div class="slide-image">
+                        <img src="images/pc2.jpg" alt="1440p Équilibré - Vue principale" class="main-img">
+                        <div class="thumbnails">
+                            <img src="images/pc2-1.jpg" alt="Face" onclick="changeImage(this)" class="active">
+                            <img src="images/pc2-2.jpg" alt="Profil" onclick="changeImage(this)">
+                            <img src="images/pc2-3.jpg" alt="Setup RGB" onclick="changeImage(this)">
+                        </div>
+                    </div>
+                    <div class="slide-description">
+                        <h3>1440p Équilibré</h3>
+                        <p class="price">Prix indicatif : 1300–1700 €</p>
+                        <ul>
+                            <li>RTX 4070 Ti Super / i7-14700K</li>
+                            <li>32 Go DDR5 + 2 To NVMe</li>
+                            <li>Optimisations : Gaming + Streaming + Vie privée</li>
+                            <li>Idéal pour : Jeu compétitif</li>
+                        </ul>
+                        <a href="mailto:contact@pcsurmesure.fr?subject=Devis 1440p" class="btn-devis">Demander devis</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 - Blanc Esthétique -->
+            <div class="mySlides">
+                <div class="slide-content">
+                    <div class="slide-image">
+                        <img src="images/pc3.jpg" alt="Blanc Esthétique - Vue principale" class="main-img">
+                        <div class="thumbnails">
+                            <img src="images/pc3-1.jpg" alt="Vue avant" onclick="changeImage(this)" class="active">
+                            <img src="images/pc3-2.jpg" alt="Vue latérale" onclick="changeImage(this)">
+                            <img src="images/pc3-3.jpg" alt="Intérieur blanc" onclick="changeImage(this)">
+                        </div>
+                    </div>
+                    <div class="slide-description">
+                        <h3>Blanc Esthétique Haut de gamme</h3>
+                        <p class="price">Prix indicatif : 1900–2400 €</p>
+                        <ul>
+                            <li>RTX 4080 Super / Ryzen 7 9800X3D</li>
+                            <li>Boîtier blanc verre trempé</li>
+                            <li>Optimisations : Silence + RGB doux</li>
+                            <li>Idéal pour : Setup esthétique</li>
+                        </ul>
+                        <a href="mailto:contact@pcsurmesure.fr?subject=Devis Blanc" class="btn-devis">Demander devis</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 - Budget Performant -->
+            <div class="mySlides">
+                <div class="slide-content">
+                    <div class="slide-image">
+                        <img src="images/pc4.jpg" alt="Budget Performant - Vue principale" class="main-img">
+                        <div class="thumbnails">
+                            <img src="images/pc4-1.jpg" alt="Vue complète" onclick="changeImage(this)" class="active">
+                            <img src="images/pc4-2.jpg" alt="Composants" onclick="changeImage(this)">
+                            <img src="images/pc4-3.jpg" alt="Câblage propre" onclick="changeImage(this)">
+                        </div>
+                    </div>
+                    <div class="slide-description">
+                        <h3>Budget Performant</h3>
+                        <p class="price">Prix indicatif : 700–1000 €</p>
+                        <ul>
+                            <li>RTX 4060 / Ryzen 5 7600</li>
+                            <li>32 Go DDR5</li>
+                            <li>Optimisations : Gaming entrée + Privacy</li>
+                            <li>Idéal pour : Débutants</li>
+                        </ul>
+                        <a href="mailto:contact@pcsurmesure.fr?subject=Devis Budget" class="btn-devis">Demander devis</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flèches navigation -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Dots indicateurs -->
+        <div class="dots-container">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+
+    <!-- Autres sections (services + tableau) -->
+    <section id="services">
+        <h2>Nos Services</h2>
+        <ul>
+            <li>Montage PC tour sur mesure selon budget</li>
+            <li>Optimisation Windows gaming (FPS max, faible latence)</li>
+            <li>Optimisation vie privée (désactivation télémétrie)</li>
+            <li>Adaptation au profil client</li>
+            <li>Devis gratuit sans engagement</li>
+        </ul>
+        <img src="images/optimisation.jpg" alt="Optimisation Windows" class="service-img">
+    </section>
+
+    <section id="budgets">
+        <h2>Exemples selon Budget</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Budget</th>
+                    <th>Type</th>
+                    <th>Exemple</th>
+                    <th>Usage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>600–900 €</td><td>Entrée</td><td>RTX 4060 + Ryzen 5</td><td>Gaming 1080p</td></tr>
+                <tr><td>1000–1500 €</td><td>Milieu</td><td>RTX 4070 Ti + i7</td><td>1440p + streaming</td></tr>
+                <tr><td>2000 €+</td><td>Haut</td><td>RTX 5090 + Ryzen 9</td><td>4K ultra</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+</main>
+
+<footer>
+    <div class="contact">
+        <h3>Contact</h3>
+        <p>Email : <a href="mailto:contact@pcsurmesure.fr">contact@pcsurmesure.fr</a></p>
+        <p>Téléphone : +33 6 XX XX XX XX</p>
+        <p>Marseille, France</p>
+    </div>
+    <div class="credits">
+        <p>Site d'entraînement BUT GEII • © 2026</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
