@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PC Sur Mesure - Montage & Optimisation Gaming / Vie Privée</title>
+    <title>PC Sur Mesure Marseille - Montage & Optimisation Gaming / Vie Privée</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- Header -->
+<!-- Header avec logo et titre -->
 <header>
     <img src="images/logo.png" alt="Logo PC Sur Mesure" class="logo">
     <div>
@@ -17,12 +17,21 @@
     </div>
 </header>
 
-<main>
+<!-- Bandeau de navigation fixe -->
+<nav class="main-nav">
+    <div class="nav-container">
+        <a href="index.html" class="nav-btn active">Montage PC</a>
+        <a href="optimisations.html" class="nav-btn">Optimisations</a>
+        <a href="depannage.html" class="nav-btn">Dépannage</a>
+    </div>
+</nav>
 
-    <!-- Galerie Configurations (carousel + thumbnails) -->
+<!-- Contenu principal : Carousel + présentation générale -->
+<main>
     <section id="gallery">
-        <h2>Nos Configurations Phares – Personnalisables</h2>
-        <p>Défilez automatiquement ou utilisez les flèches. Cliquez sur les miniatures pour changer la vue. Chaque build s'adapte à votre budget et profil (gamer, privacy, etc.).</p>
+        <h2>Exemples de Configurations Personnalisées</h2>
+        <p>Voici quelques-uns de nos montages phares. Chaque configuration est adaptée à votre budget, votre usage (gaming compétitif, streaming, confidentialité maximale, etc.) et votre profil.  
+        Cliquez sur les miniatures pour changer la vue, sur les flèches pour naviguer, ou laissez défiler automatiquement.</p>
 
         <div class="slideshow-container">
 
@@ -30,11 +39,11 @@
             <div class="mySlides">
                 <div class="slide-content">
                     <div class="slide-image">
-                        <img src="images/pc1.jpg" alt="Ultra 4K Gaming - Vue principale" class="main-img">
+                        <img src="images/pc1-1.jpg" alt="Ultra 4K Gaming - Vue principale" class="main-img">
                         <div class="thumbnails">
-                            <img src="images/pc2.jpg" alt="Face RGB" onclick="changeImage(this)" class="active">
-                            <img src="images/pc3.jpg" alt="Côté verre" onclick="changeImage(this)">
-                            <img src="images/pc4.jpg" alt="Intérieur composants" onclick="changeImage(this)">
+                            <img src="images/pc1-1.jpg" alt="Vue avant RGB" onclick="changeImage(this)" class="active">
+                            <img src="images/pc1-2.jpg" alt="Vue latérale verre" onclick="changeImage(this)">
+                            <img src="images/pc1-3.jpg" alt="Intérieur composants" onclick="changeImage(this)">
                         </div>
                     </div>
                     <div class="slide-description">
@@ -43,8 +52,8 @@
                         <ul>
                             <li>RTX 5090 / Ryzen 9 9950X</li>
                             <li>64 Go DDR5 + Watercooling custom</li>
-                            <li>Optimisations : Max FPS, RGB sync, Silence</li>
-                            <li>Idéal pour : 4K ultra + streaming</li>
+                            <li>Optimisations : Max FPS, RGB synchronisé, Silence</li>
+                            <li>Idéal pour : 4K ultra, streaming intensif</li>
                         </ul>
                         <a href="mailto:contact@pcsurmesure.fr?subject=Devis Ultra 4K" class="btn-devis">Demander devis</a>
                     </div>
@@ -55,10 +64,10 @@
             <div class="mySlides">
                 <div class="slide-content">
                     <div class="slide-image">
-                        <img src="images/pc2.jpg" alt="1440p Équilibré - Vue principale" class="main-img">
+                        <img src="images/pc2-1.jpg" alt="1440p Équilibré - Vue principale" class="main-img">
                         <div class="thumbnails">
-                            <img src="images/pc2-1.jpg" alt="Face" onclick="changeImage(this)" class="active">
-                            <img src="images/pc2-2.jpg" alt="Profil" onclick="changeImage(this)">
+                            <img src="images/pc2-1.jpg" alt="Vue avant" onclick="changeImage(this)" class="active">
+                            <img src="images/pc2-2.jpg" alt="Vue profil" onclick="changeImage(this)">
                             <img src="images/pc2-3.jpg" alt="Setup RGB" onclick="changeImage(this)">
                         </div>
                     </div>
@@ -67,9 +76,9 @@
                         <p class="price">Prix indicatif : 1300–1700 €</p>
                         <ul>
                             <li>RTX 4070 Ti Super / i7-14700K</li>
-                            <li>32 Go DDR5 + 2 To NVMe</li>
+                            <li>32 Go DDR5 + SSD 2 To</li>
                             <li>Optimisations : Gaming + Streaming + Vie privée</li>
-                            <li>Idéal pour : Jeu compétitif</li>
+                            <li>Idéal pour : Jeu compétitif + contenu</li>
                         </ul>
                         <a href="mailto:contact@pcsurmesure.fr?subject=Devis 1440p" class="btn-devis">Demander devis</a>
                     </div>
@@ -80,7 +89,7 @@
             <div class="mySlides">
                 <div class="slide-content">
                     <div class="slide-image">
-                        <img src="images/pc3.jpg" alt="Blanc Esthétique - Vue principale" class="main-img">
+                        <img src="images/pc3-1.jpg" alt="Blanc Esthétique - Vue principale" class="main-img">
                         <div class="thumbnails">
                             <img src="images/pc3-1.jpg" alt="Vue avant" onclick="changeImage(this)" class="active">
                             <img src="images/pc3-2.jpg" alt="Vue latérale" onclick="changeImage(this)">
@@ -93,8 +102,8 @@
                         <ul>
                             <li>RTX 4080 Super / Ryzen 7 9800X3D</li>
                             <li>Boîtier blanc verre trempé</li>
-                            <li>Optimisations : Silence + RGB doux</li>
-                            <li>Idéal pour : Setup esthétique</li>
+                            <li>Optimisations : Silence maximal + RGB doux</li>
+                            <li>Idéal pour : Setup esthétique + gaming</li>
                         </ul>
                         <a href="mailto:contact@pcsurmesure.fr?subject=Devis Blanc" class="btn-devis">Demander devis</a>
                     </div>
@@ -105,7 +114,7 @@
             <div class="mySlides">
                 <div class="slide-content">
                     <div class="slide-image">
-                        <img src="images/pc4.jpg" alt="Budget Performant - Vue principale" class="main-img">
+                        <img src="images/pc4-1.jpg" alt="Budget Performant - Vue principale" class="main-img">
                         <div class="thumbnails">
                             <img src="images/pc4-1.jpg" alt="Vue complète" onclick="changeImage(this)" class="active">
                             <img src="images/pc4-2.jpg" alt="Composants" onclick="changeImage(this)">
@@ -118,8 +127,8 @@
                         <ul>
                             <li>RTX 4060 / Ryzen 5 7600</li>
                             <li>32 Go DDR5</li>
-                            <li>Optimisations : Gaming entrée + Privacy</li>
-                            <li>Idéal pour : Débutants</li>
+                            <li>Optimisations : Gaming entrée + Privacy focus</li>
+                            <li>Idéal pour : Débutants gaming</li>
                         </ul>
                         <a href="mailto:contact@pcsurmesure.fr?subject=Devis Budget" class="btn-devis">Demander devis</a>
                     </div>
@@ -140,49 +149,26 @@
         </div>
     </section>
 
-    <!-- Autres sections (services + tableau) -->
-    <section id="services">
-        <h2>Nos Services</h2>
-        <ul>
-            <li>Montage PC tour sur mesure selon budget</li>
-            <li>Optimisation Windows gaming (FPS max, faible latence)</li>
-            <li>Optimisation vie privée (désactivation télémétrie)</li>
-            <li>Adaptation au profil client</li>
-            <li>Devis gratuit sans engagement</li>
-        </ul>
-        <img src="images/optimisation.jpg" alt="Optimisation Windows" class="service-img">
+    <!-- Présentation rapide -->
+    <section id="intro">
+        <h2>Bienvenue chez PC Sur Mesure Marseille</h2>
+        <p>Nous proposons des montages PC tour entièrement personnalisés selon votre budget et vos besoins :  
+        gaming compétitif, streaming, création de contenu, confidentialité maximale ou usage mixte.  
+        Tous nos montages incluent une optimisation Windows sur mesure (FPS boostés, latence réduite, télémétrie désactivée).</p>
+        <p>Devis gratuit et sans engagement – contactez-nous !</p>
     </section>
-
-    <section id="budgets">
-        <h2>Exemples selon Budget</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Budget</th>
-                    <th>Type</th>
-                    <th>Exemple</th>
-                    <th>Usage</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>600–900 €</td><td>Entrée</td><td>RTX 4060 + Ryzen 5</td><td>Gaming 1080p</td></tr>
-                <tr><td>1000–1500 €</td><td>Milieu</td><td>RTX 4070 Ti + i7</td><td>1440p + streaming</td></tr>
-                <tr><td>2000 €+</td><td>Haut</td><td>RTX 5090 + Ryzen 9</td><td>4K ultra</td></tr>
-            </tbody>
-        </table>
-    </section>
-
 </main>
 
+<!-- Footer commun -->
 <footer>
     <div class="contact">
-        <h3>Contact</h3>
+        <h3>Contact & Devis gratuit</h3>
         <p>Email : <a href="mailto:contact@pcsurmesure.fr">contact@pcsurmesure.fr</a></p>
         <p>Téléphone : +33 6 XX XX XX XX</p>
         <p>Marseille, France</p>
     </div>
     <div class="credits">
-        <p>Site d'entraînement BUT GEII • © 2026</p>
+        <p>Site créé pour entraînement BUT GEII – SAE Réseau S5 • Crédits photos : Unsplash / inspirations marchands • © 2026</p>
     </div>
 </footer>
 
